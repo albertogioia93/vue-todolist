@@ -35,7 +35,7 @@
             <div class="row">
                 <div class="col-12">
                     <div class="input-group mb-3">
-                        <input type="text" class="form-control" placeholder="Aggiungi una nuova cosa da fare alla lista to do" v-model="newTodo">
+                        <input type="text" class="form-control" placeholder="Aggiungi una nuova cosa da fare alla lista to do" v-model="newTodo" @keyup.enter="addTodo">
                         <button class="btn btn-outline-secondary" type="button" id="button-addon2" @click="addTodo">Aggiungi</button>
                     </div>
                 </div>
